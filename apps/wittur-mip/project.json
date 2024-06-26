@@ -1,0 +1,24 @@
+{
+  "name": "wittur-mip",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wittur-mip/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "wittur-mip:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "wittur-mip:build:development"
+        },
+        "production": {
+          "buildTarget": "wittur-mip:build:production"
+        }
+      }
+    }
+  }
+}
