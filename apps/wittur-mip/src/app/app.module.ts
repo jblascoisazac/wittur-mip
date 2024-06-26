@@ -1,13 +1,10 @@
 import { Module } from '@nestjs/common';
 
-import { ProductModule } from './product/product.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Product } from './product/entities/product.entity';
-import { VariantModule } from './variant/variant.module';
+import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
-    ProductModule,
     TypeOrmModule.forRoot({
       type: 'mssql',
       host: '127.0.0.1',
@@ -15,14 +12,14 @@ import { VariantModule } from './variant/variant.module';
       username: 'sa',
       password: 'yourStrong(!)Password',
       database: 'test',
-      entities: [Product],
+      entities: [],
       synchronize: true,
       autoLoadEntities: true,
       options: {
         encrypt: false,
       },
     }),
-    VariantModule,
+    ProductModule,
   ],
 })
 export class AppModule {}
