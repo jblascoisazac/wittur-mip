@@ -3815,6 +3815,7 @@ __metadata:
     nx: "npm:19.3.1"
     prettier: "npm:^2.6.2"
     reflect-metadata: "npm:^0.1.13"
+    run-script-webpack-plugin: "npm:^0.2.0"
     rxjs: "npm:^7.8.0"
     ts-jest: "npm:^29.1.0"
     ts-node: "npm:10.9.1"
@@ -3822,6 +3823,7 @@ __metadata:
     typeorm: "npm:^0.3.20"
     typescript: "npm:~5.4.2"
     webpack-cli: "npm:^5.1.4"
+    webpack-pnp-externals: "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
@@ -10300,6 +10302,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"run-script-webpack-plugin@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "run-script-webpack-plugin@npm:0.2.0"
+  checksum: 10c0/940c102705afdd2d506680a3570f9b7ba0901bc68b2d063b486329c3cba98deb5a64cfb6fc2643394eff2bd1da9ff67d49726579420fd52a0bbc6db3a55a2752
+  languageName: node
+  linkType: hard
+
 "rxjs@npm:7.8.1, rxjs@npm:^7.8.0":
   version: 7.8.1
   resolution: "rxjs@npm:7.8.1"
@@ -11856,6 +11865,13 @@ __metadata:
   version: 3.0.0
   resolution: "webpack-node-externals@npm:3.0.0"
   checksum: 10c0/9f645a4dc8e122dac43cdc8c1367d4b44af20c79632438b633acc1b4fe64ea7ba1ad6ab61bd0fc46e1b873158c48d8c7a25a489cdab1f31299f00eb3b81cfc61
+  languageName: node
+  linkType: hard
+
+"webpack-pnp-externals@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "webpack-pnp-externals@npm:1.1.0"
+  checksum: 10c0/73e1ade09dcc51fc8f4debd868423bf1211b2d3f66d13d8f915485c8b1cb8e904ece8e05bfcdc6ecaa6eeb1da5020ff2a021d44a0eff87a280caea34485a7e85
   languageName: node
   linkType: hard
 

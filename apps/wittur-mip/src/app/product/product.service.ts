@@ -43,7 +43,7 @@ export class ProductService {
     return await this.productsRepository.save(updatedProduct);
   }
 
-  async remove(id: number) {
+  async remove(id: number): Promise<void> {
     const result = await this.productsRepository.delete(id);
 
     if (result.affected > 0) return;

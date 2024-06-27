@@ -13,6 +13,7 @@ module.exports = {
       tsConfig: './tsconfig.app.json',
       assets: ['./src/assets'],
       optimization: false,
+      sourceMap: true,
       outputHashing: 'none',
       transformers: [{ name: '@nestjs/swagger/plugin' }],
     }),
