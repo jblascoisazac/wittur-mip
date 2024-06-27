@@ -5,6 +5,15 @@
   "projectType": "application",
   "tags": [],
   "targets": {
+    "repl": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/wittur-mip",
+        "main": "apps/wittur-mip/src/repl.ts",
+        "webpackConfig": "apps/wittur-mip/webpack.config.js"
+      }
+    },
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
@@ -17,6 +26,9 @@
         },
         "production": {
           "buildTarget": "wittur-mip:build:production"
+        },
+        "repl": {
+          "buildTarget": "wittur-mip:repl"
         }
       }
     }

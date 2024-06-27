@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "serve": "nx serve wittur-mip",
-    "start": "nx serve wittur-mip",
+    "start": "nx serve wittur-mip --configuration production",
+    "serve:repl": "nx serve wittur-mip --configuration repl",
     "build": "nx build wittur-mip"
   },
   "devDependencies": {
