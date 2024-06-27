@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProductModule } from './product/product.module';
+import { HealthcheckModule } from './healthcheck/healthcheck.module';
 
 @Module({
   imports: [
@@ -11,7 +12,7 @@ import { ProductModule } from './product/product.module';
       port: 1433,
       username: 'sa',
       password: 'yourStrong(!)Password',
-      database: 'test',
+      database: 'WitturMip',
       entities: [],
       synchronize: true,
       autoLoadEntities: true,
@@ -20,6 +21,7 @@ import { ProductModule } from './product/product.module';
       },
     }),
     ProductModule,
+    HealthcheckModule,
   ],
 })
 export class AppModule {}
